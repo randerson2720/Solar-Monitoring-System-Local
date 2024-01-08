@@ -1,0 +1,75 @@
+#page-title {
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 3px solid #000; 
+    border-radius: 5px; 
+    display: block; 
+    background-color: #fff; 
+    color: #333; 
+    text-align: center;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto; 
+    gap: 10px; 
+    padding: 20px; 
+    
+}
+
+.system-container, .controller-container, .battery-container {
+    background-color: #f3f3f3; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #000; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0,0.2);
+}
+
+.solar-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+    gap: 10px;
+    padding: 20px;
+}
+
+.load-container, .pv-container {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid #000; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0,0.2);
+}
+
+.today-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+    background-color: #f3f3f3; 
+    border-radius: 5px; 
+    border: 3px solid #000; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0,0.2);
+}
+
+.today-container > div {
+    background-color: #ffffff; 
+    padding: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    
+}
+
+.today-container > h1 {
+    grid-column: 1 / -1; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+#battery-minvoltage-today {
+    grid-column: 1 / -1;
+    justify-self: center;
+    
+}

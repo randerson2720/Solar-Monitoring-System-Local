@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1 id="page-title">Solar Monitoring System</h1>
+<div class="info-container">
+    <div class="system-container">
+        <div id="system-information">
+            <h1>System Information</h1>
+            <p>Max System Voltage: <span id="max-system-voltage-display"></span> V</p>
+            <p>Max System Amps: <span id="max-system-amps-display"></span> A</p>
+            <p>Max System Discharge: <span id="max-discharge-display"></span> A</p>
+        </div>
+    </div>
+    <div class="controller-container">
+        <h1>Controller Information</h1>
+        <div id="controller-temperature">
+            <p>Controller Temperature: <span id="controller-temperature-display"></span> C</p>
+        </div>
+        <div id="controller-uptime">
+            <p>Controller Uptime: <span id="controller-uptime-display"></span> Day(s)</p>
+        </div>
+    </div>
+    <div class="battery-container">
+            <h1>Battery Information</h1>
+            <div id="battery-capacity"></div>
+            <div id="battery-type">
+                <p>Battery Type: <span id="battery-type-display"></span></p>
+            </div>
+            <div id="battery-voltage">
+                <p>Battery Voltage: <span id="battery-voltage-display"></span> V</p>
+            </div>
+            <div id="battery-charge-amps">
+                <p>Battery Charge Amps: <span id="battery-charge-amps-display"></span> A</p>
+            </div>
+            <div id="battery-overcharge">
+                <p>Battery Over-Charges: <span id="battery-overcharge-display"></span></p>
+            </div>
+            <div id="battery-fullcharge">
+                <p>Battery Full Charges: <span id="battery-fullcharge-display"></span></p>
+            </div>
+            <div id="battery-charge-indicator">
+                <p>Battery Charging State: <span id="battery-charge-indicator-display"></span></p>
+            </div>
+    </div>
+</div>
+
+<div class="solar-info">
+    <div class="load-container">
+        <h1>Load Information</h1>
+        <div id="load-voltage">
+            <p>Load Voltage: <span id="load-voltage-display"></span> V</p>
+        </div>
+        <div id="load-current">
+            <p>Load Current: <span id="load-current-display"></span> A</p>
+        </div>
+        <div id="load-power">
+            <p>Load Power: <span id="load-power-display"></span> W</p>
+        </div>
+    </div>
+    <div class="pv-container">
+        <h1>PV Information</h1>
+        <div id="pv-voltage">
+            <p>PV Voltage: <span id="pv-voltage-display"></span> V</p>
+        </div>
+        <div id="pv-current">
+            <p>PV Current: <span id="pv-current-display"></span> A</p>
+        </div>
+        <div id="pv-power">
+            <p>PV Power: <span id="pv-power-display"></span> W</p>
+        </div>
+    </div>
+</div>
+    
+<div class="today-container">
+        <h1>Day Information</h1>
+        <div id="today-power-generated">
+            <p>Power Generated Today: <span id="today-power-generated-display"></span> W</p>
+            <canvas id="chart9"></canvas>
+        </div>
+        <div id="today-power-consumed">
+            <p>Power Consumed Today: <span id="today-power-consumed-display"></span> W</p>
+            <canvas id="chart10"></canvas>
+        </div>
+        <div id="today-charge-power">
+            <p>Max Charge Power Today: <span id="today-charge-power-display"></span> W</p>\
+            <canvas id="chart5"></canvas>
+        </div>
+        <div id="today-discharge-power">
+            <p>Max Discharge Power Today: <span id="today-discharge-power-display"></span> W</p>
+            <canvas id="chart6"></canvas>
+        </div>
+        <div id="today-maxcharge-current">
+            <p>Max Charge Current Today: <span id="today-maxcharge-current-display"></span> A</p>
+            <canvas id="chart3"></canvas>
+        </div>
+        <div id="today-maxdischarge-current">
+            <p>Max Discharge Current Today: <span id="today-maxdischarge-current-display"></span> A</p>
+            <canvas id="chart4"></canvas>
+        </div>
+        <div id="today-maxcharge-amphours">
+            <p>Max Charge Amp Hours Today: <span id="today-maxcharge-amphours-display"></span> A/HR</p>
+            <canvas id="chart7"></canvas>
+        </div>
+        <div id="today-maxdischarge-amphours">
+            <p>Max Discharge Amp Hours Today: <span id="today-maxdischarge-amphours-display"></span> A/HR</p>
+            <canvas id="chart8"></canvas>
+        </div>
+        <div id="battery-maxvoltage-today">
+            <p>Max Battery Voltage Today: <span id="battery-maxvoltage-today-display"></span> V</p>
+            <canvas id="chart1"></canvas>
+        </div>
+        <div id="battery-minvoltage-today">
+            <p>Min Battery Voltage Today: <span id="battery-minvoltage-today-display"></span> V</p>
+            <canvas id="chart2" width="576" height="288"></canvas>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
